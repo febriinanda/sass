@@ -1,0 +1,194 @@
+body {
+  font: 100% Helvetica, proxima-nova;
+  color: #292E37; }
+  body.grey {
+    background-color: #F2F2F2; }
+
+.ui.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 2em;
+  background-color: #fff;
+  top: 0; }
+  .ui.header.small {
+    padding: 1em; }
+  .ui.header.large {
+    padding: 3em; }
+
+.ui.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1em; }
+  .ui.footer > .ui.text {
+    color: #999999; }
+  .ui.footer.center {
+    text-align: center;
+    vertical-align: middle; }
+
+.ui.container {
+  position: absolute;
+  left: 0;
+  right: 0; }
+
+.ui.text {
+  color: #333333;
+  line-height: 20px;
+  margin: 1em;
+  font-size: 16px;
+  font-weight: 300; }
+  .ui.text.small {
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 400; }
+  .ui.text.link {
+    color: #2E99CE;
+    cursor: pointer; }
+    .ui.text.link:hover {
+      color: #1585CF; }
+  .ui.text.center {
+    text-align: center;
+    vertical-align: middle; }
+
+.ui.box {
+  width: 50%;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+  margin: 1rem 2em;
+  padding: 1em 1em;
+  border-radius: 0.28571429rem;
+  border: 1px solid rgba(34, 36, 38, 0.15); }
+  .ui.box:first-child {
+    margin-top: 0em; }
+  .ui.box:last-child {
+    margin-bottom: 0em; }
+  .ui.box.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+
+.ui.button {
+  cursor: pointer;
+  display: inline-block;
+  min-height: 1em;
+  outline: none;
+  border: none;
+  vertical-align: baseline;
+  background: #5C5C5C none;
+  color: #fff;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  margin: 0em 0.25em 0em 0em;
+  padding: 0.78571429em 1.5em 0.78571429em;
+  text-transform: none;
+  text-shadow: none;
+  font-weight: bold;
+  line-height: 1em;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.28571429rem;
+  box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+  transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+  will-change: '';
+  -webkit-tap-highlight-color: transparent; }
+  .ui.button:hover {
+    background-color: #333333; }
+  .ui.button.green {
+    background-color: #329600;
+    background-image: none; }
+    .ui.button.green:hover {
+      background-color: #48A11A; }
+    .ui.button.green:focus {
+      background-color: #48A11A; }
+  .ui.button.orange {
+    background-color: #FF9600;
+    background-image: none; }
+    .ui.button.orange:hover {
+      background-color: #FFA11A; }
+    .ui.button.orange:focus {
+      background-color: #FFA11A; }
+  .ui.button.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+
+a {
+  color: #2E99CE;
+  text-decoration: none; }
+  a:hover {
+    color: #1585CF; }
+
+h1.ui.text {
+  font-size: 42px;
+  line-height: 46px;
+  font-weight: 100; }
+  h1.ui.text.center {
+    text-align: center;
+    vertical-align: middle; }
+
+h2.ui.text {
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 300; }
+  h2.ui.text.center {
+    text-align: center;
+    vertical-align: middle; }
+
+h3.ui.text {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 400; }
+  h3.ui.text.center {
+    text-align: center;
+    vertical-align: middle; }
+
+h4.ui.text {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400; }
+  h4.ui.text.center {
+    text-align: center;
+    vertical-align: middle; }
+
+h5.ui.text {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 300; }
+  h5.ui.text.center {
+    text-align: center;
+    vertical-align: middle; }
+
+h6.ui.text {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300; }
+  h6.ui.text.center {
+    text-align: center;
+    vertical-align: middle; }
+
+.ui.box.jumbo {
+  width: 90%; }
+  .ui.box.jumbo.center {
+    left: 5%; }
+
+.ui.box.large {
+  width: 70%; }
+  .ui.box.large.center {
+    left: 15%; }
+
+.ui.box.medium {
+  width: 50%; }
+  .ui.box.medium.center {
+    left: 25%; }
+
+.ui.box.small {
+  width: 30%; }
+  .ui.box.small.center {
+    left: 35%; }
