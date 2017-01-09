@@ -1,5 +1,5 @@
 body {
-  font-family: proxima-nova, sans-serif;
+  font-family: proxima-nova, Sans-Serif;
   color: #292E37; }
   body.grey {
     background-color: #F2F2F2; }
@@ -22,7 +22,7 @@ body {
   bottom: 0;
   left: 0;
   padding: 1em; }
-  .ui.footer > .ui.text {
+  .ui.footer > .ui.font {
     color: #999999; }
   .ui.footer.center {
     text-align: center;
@@ -33,29 +33,33 @@ body {
   left: 0;
   right: 0; }
 
-.ui.text {
+.ui.font {
   color: #333333;
   line-height: 20px;
   margin: 1em;
   font-size: 16px;
   font-weight: 300; }
-  .ui.text.small {
+  .ui.font.small {
     line-height: 18px;
     font-size: 14px;
     font-weight: 400; }
-  .ui.text.link {
+  .ui.font.large {
+    line-height: 18px;
+    font-size: 40px;
+    font-weight: 100; }
+  .ui.font.link {
     color: #2E99CE;
     cursor: pointer; }
-    .ui.text.link:hover {
+    .ui.font.link:hover {
       color: #1585CF; }
-  .ui.text.center {
+  .ui.font.center {
     text-align: center;
     vertical-align: middle; }
-  .ui.text.right {
+  .ui.font.right {
     margin-top: 0;
     margin-right: auto;
     text-align: end; }
-  .ui.text.label {
+  .ui.font.label {
     color: #999999; }
 
 .ui.box {
@@ -130,7 +134,7 @@ body {
   display: inline-block;
   vertical-align: middle;
   max-width: 35%;
-  background-color: transparent; }
+  background-color: transparant; }
   .ui.image svg, .ui.image img {
     display: block;
     max-width: 100%;
@@ -142,6 +146,8 @@ body {
   .ui.image.circle {
     overflow: hidden;
     border-radius: 500rem; }
+  .ui.image.fill {
+    background-color: #999999; }
   .ui.image.jumbo {
     max-width: 75%; }
   .ui.image.large {
@@ -150,6 +156,8 @@ body {
     max-width: 35%; }
   .ui.image.small {
     max-width: 25%; }
+  .ui.image.extra.small {
+    max-width: 9%; }
 
 .ui.form {
   position: relative;
@@ -201,54 +209,14 @@ a {
   a:hover {
     color: #1585CF; }
 
-h1.ui.text {
-  font-size: 42px;
-  line-height: 46px;
-  font-weight: 100; }
-  h1.ui.text.center {
-    text-align: center;
-    vertical-align: middle; }
-
-h2.ui.text {
-  font-size: 32px;
-  line-height: 36px;
-  font-weight: 300; }
-  h2.ui.text.center {
-    text-align: center;
-    vertical-align: middle; }
-
-h3.ui.text {
-  font-size: 28px;
-  line-height: 32px;
-  font-weight: 400; }
-  h3.ui.text.center {
-    text-align: center;
-    vertical-align: middle; }
-
-h4.ui.text {
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 400; }
-  h4.ui.text.center {
-    text-align: center;
-    vertical-align: middle; }
-
-h5.ui.text {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 300; }
-  h5.ui.text.center {
-    text-align: center;
-    vertical-align: middle; }
-
-h6.ui.text {
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 300; }
-  h6.ui.text.center {
-    text-align: center;
-    vertical-align: middle; }
-
+/*
+@include heading-format(h1, 42px, 46px, 100);
+@include heading-format(h2, 32px, 36px, 300);
+@include heading-format(h3, 28px, 32px, 400);
+@include heading-format(h4, 24px, 28px, 400);
+@include heading-format(h5, 20px, 24px, 300);
+@include heading-format(h6, 18px, 22px, 300);
+*/
 .ui.box.jumbo {
   width: 75%; }
   .ui.box.jumbo.center {

@@ -1,4 +1,4 @@
-$font-stack: proxima-nova, sans-serif;
+$font-stack: proxima-nova, Sans-Serif;
 
 // Primary
 $primary: #76B246;
@@ -69,7 +69,7 @@ body{
     bottom: 0;
     left: 0;
     padding: 1em;
-    & > .ui.text {
+    & > .ui.font {
       color: $footer;
     }
     &.center {
@@ -84,7 +84,7 @@ body{
     right: 0;
   } // end of container
 
-  &.text{
+  &.font{
     color: $text;
     line-height: 20px;
     margin: 1em;
@@ -99,6 +99,12 @@ body{
         size:14px;
         weight: 400;
       }
+    }
+
+    &.large{
+      line-height: 18px;
+      font-size: 40px;
+      font-weight: 100;
     }
 
     &.link{
@@ -123,7 +129,7 @@ body{
     &.label{
       color: $footer;
     }
-  } // end of .text
+  } // end of .font
 
   &.box{
     $width: 50%;
@@ -212,7 +218,7 @@ body{
     display: inline-block;
     vertical-align: middle;
     max-width: 35%;
-    background-color: transparent;
+    background-color: transparant;
     svg, img{
       display: block;
       max-width: 100%;
@@ -227,6 +233,10 @@ body{
       overflow: hidden;
       border-radius: 500rem;
     }
+
+    &.fill{
+      background-color: $footer;
+    }
     // img size
     &.jumbo{
       max-width: 75%;
@@ -240,6 +250,10 @@ body{
     &.small{
       max-width: 25%;
     }
+    &.extra.small{
+      max-width: 9%;
+    }
+
   } // end of .image
 
   &.form{
@@ -303,7 +317,7 @@ a{
 } // end of a
 
 @mixin heading-format($selector, $font-size, $line-height, $font-weight){
-  #{$selector}.ui.text {
+  #{$selector}.ui.font {
     font-size: $font-size;
     line-height: $line-height;
     font-weight: $font-weight;
@@ -313,14 +327,14 @@ a{
     }
   }
 }
-
+/*
 @include heading-format(h1, 42px, 46px, 100);
 @include heading-format(h2, 32px, 36px, 300);
 @include heading-format(h3, 28px, 32px, 400);
 @include heading-format(h4, 24px, 28px, 400);
 @include heading-format(h5, 20px, 24px, 300);
 @include heading-format(h6, 18px, 22px, 300);
-
+*/
 @mixin box-center($selector, $width){
   .ui.box.#{$selector}{
     width: $width;
