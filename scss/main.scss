@@ -44,7 +44,7 @@ body{
       color: $background-color;
     }
   }
-}
+} //end of body
 
 .ui{
   &.header{
@@ -61,7 +61,7 @@ body{
     &.large {
       padding: 3em;
     }
-  }
+  } // end of .header
 
   &.footer{
     position: absolute;
@@ -76,13 +76,13 @@ body{
       text-align: center;
       vertical-align: middle;
     }
-  }
+  } // end of .footer
 
   &.container{
     position: absolute;
     left: 0;
     right: 0;
-  }
+  } // end of container
 
   &.text{
     color: $text;
@@ -114,7 +114,16 @@ body{
       text-align: center;
       vertical-align: middle;
     }
-  }
+
+    &.right{
+      margin-top: 0;
+      margin-right: auto;
+      text-align: end;
+    }
+    &.label{
+      color: $footer;
+    }
+  } // end of .text
 
   &.box{
     $width: 50%;
@@ -137,8 +146,7 @@ body{
       margin-left: auto;
       margin-right: auto;
     }
-
-  }
+  } // end of .box
 
   &.button{
     cursor: pointer;
@@ -150,7 +158,7 @@ body{
     background: $hollow-base none;
     color: $white;
     font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-    margin: 0em 0.25em 0em 0em;
+    margin: 1.6em 0.25em 1em 0em;
     padding: 0.78571429em 1.5em 0.78571429em;
     text-transform: none;
     text-shadow: none;
@@ -197,8 +205,93 @@ body{
       margin-left: auto;
       margin-right: auto;
     }
-  }
-}
+  } // end of .button
+
+  &.image {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 35%;
+    background-color: transparent;
+    svg, img{
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+    &.center{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &.circle{
+      overflow: hidden;
+      border-radius: 500rem;
+    }
+    // img size
+    &.jumbo{
+      max-width: 75%;
+    }
+    &.large{
+      max-width: 55%;
+    }
+    &.medium{
+      max-width: 35%;
+    }
+    &.small{
+      max-width: 25%;
+    }
+  } // end of .image
+
+  &.form{
+    position: relative;
+    max-width: 100%;
+    & > p{
+      margin: 1em 0em;
+    }
+    .field{
+      clear: both;
+      margin: 1em 0em 0.3em;
+      &:last-child{
+        margin-bottom: 0em;
+      }
+      & > label{
+        color: $footer;
+        font-size: small;
+      }
+    }
+    textarea,
+    input:not([type]),
+    input[type="date"],
+    input[type="datetime-local"],
+    input[type="email"],
+    input[type="number"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="time"],
+    input[type="text"],
+    input[type="file"],
+    input[type="url"]{
+      width: 100%;
+      vertical-align: top;
+      font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+      margin: 0em;
+      outline: none;
+      -webkit-appearance: none;
+      tap-highlight-color: rgba(255, 255, 255, 0);
+      line-height: 1.2142em;
+      padding: 0.67861429em 1em;
+      font-size: 1em;
+      background: #FFFFFF;
+      border: 1px solid rgba(34, 36, 38, 0.15);
+      color: rgba(0, 0, 0, 0.87);
+      border-radius: 0.28571429rem;
+      box-shadow: 0em 0em 0em 0em transparent inset;
+      -webkit-transition: color 0.1s ease, border-color 0.1s ease;
+      transition: color 0.1s ease, border-color 0.1s ease;
+    }
+  } // end of .form
+} // end of .ui
 
 a{
   color: $link;
@@ -207,11 +300,10 @@ a{
     color: $link-hover;
   }
   &:visited{}
-}
+} // end of a
 
 @mixin heading-format($selector, $font-size, $line-height, $font-weight){
   #{$selector}.ui.text {
-
     font-size: $font-size;
     line-height: $line-height;
     font-weight: $font-weight;
@@ -238,7 +330,7 @@ a{
   }
 }
 
-@include box-center(jumbo, 90%);
-@include box-center(large, 70%);
-@include box-center(medium, 50%);
-@include box-center(small, 30%);
+@include box-center(jumbo, 75%);
+@include box-center(large, 60%);
+@include box-center(medium, 40%);
+@include box-center(small, 20%);
