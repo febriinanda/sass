@@ -1,5 +1,5 @@
 body {
-  font: 100% Helvetica, proxima-nova;
+  font-family: proxima-nova, sans-serif;
   color: #292E37; }
   body.grey {
     background-color: #F2F2F2; }

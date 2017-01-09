@@ -1,4 +1,4 @@
-$font-stack: Helvetica, proxima-nova;
+$font-stack: proxima-nova, sans-serif;
 
 // Primary
 $primary: #76B246;
@@ -37,7 +37,7 @@ $hollow-base: #5C5C5C;
 $hollow-hover: #333333;
 
 body{
-  font: 100% $font-stack;
+  font-family: $font-stack;
   color: $shark;
   &.grey{
     background: {
