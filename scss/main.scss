@@ -327,14 +327,14 @@ a{
     }
   }
 }
-/*
+
 @include heading-format(h1, 42px, 46px, 100);
 @include heading-format(h2, 32px, 36px, 300);
 @include heading-format(h3, 28px, 32px, 400);
 @include heading-format(h4, 24px, 28px, 400);
 @include heading-format(h5, 20px, 24px, 300);
 @include heading-format(h6, 18px, 22px, 300);
-*/
+
 @mixin box-center($selector, $width){
   .ui.box.#{$selector}{
     width: $width;
